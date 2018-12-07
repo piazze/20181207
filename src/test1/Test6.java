@@ -41,6 +41,10 @@ public class Test6 {
         }
     }
 
+    /**
+     * 串行递归删除文件
+     * @param file
+     */
     public static void deleteStream(File file){
         if (file.exists()){ //判断文件是否存在
             File[] files = file.listFiles();
@@ -54,6 +58,10 @@ public class Test6 {
         }
     }
 
+    /**
+     * 并行递归删除文件
+     * @param file
+     */
     public static void deleteParallelStream(File file){
         if (file.exists()){ //判断文件是否存在
             File[] files = file.listFiles();
@@ -67,6 +75,10 @@ public class Test6 {
         }
     }
 
+    /**
+     * for循环删除文件
+     * @param file
+     */
     public static void delete(File file){
         if (file.exists()){
             File[] files = file.listFiles(); //包含文件及目录
