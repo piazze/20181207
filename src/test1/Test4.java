@@ -14,7 +14,7 @@ public class Test4 {
             }*/
             Stream.of(file.listFiles())
                     .forEach(t ->
-                          System.out.println(t.getName() + "\t" + (t.isDirectory() ? "<DIR>" : ""))
+                            System.out.println(t.getName() + "\t" + (t.isDirectory() ? "<DIR>" : ""))
                     );
         }
     }
