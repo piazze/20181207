@@ -25,10 +25,10 @@ public class Test1 {
         System.out.println("dir是否目录：" + dir.isDirectory());
 
         System.out.println("文件名：" + file.getName());
-        if (!dir.exists()){ //如果dir不存在，则创建
+        if (!dir.exists()) { //如果dir不存在，则创建
             try {
-               boolean result = dir.createNewFile();  //创建文件
-                System.out.println(result?"创建成功":"创建失败");
+                boolean result = dir.createNewFile();  //创建文件
+                System.out.println(result ? "创建成功" : "创建失败");
             } catch (IOException e) {
                 e.printStackTrace();
             }
